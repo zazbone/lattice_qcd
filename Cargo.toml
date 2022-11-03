@@ -1,0 +1,22 @@
+[package]
+name = "_lattice_qcd"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ndarray = "0.15.6"
+numpy = "0.17.2"
+ndarray-rand = "0.14.0"
+
+[dependencies.pyo3]
+version = "0.17.2"
+features = ["extension-module"]
+
+[package.metadata.maturin]
+python-source = "python"
+name = "lattice_qcd._lattice_qcd"

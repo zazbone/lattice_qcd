@@ -1,0 +1,24 @@
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[project]
+name = "lattice_qcd"
+authors = [{name = "zazbone", email = "coczaz@gmail.com"}]
+# license = {file = "LICENSE"}
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Private :: Do Not Upload"
+]
+version = "0.1"
+description = ""
+# readme = "README.md"
+
+dependencies = [
+	"numpy >= 1.23",
+	"matplotlib >= 3.6",
+	"scipy >= 1.9"
+]
+
+[project.urls]
+Home = "https://github.com/zazbone"
